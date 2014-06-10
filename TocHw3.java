@@ -16,6 +16,14 @@ import org.json.*;
 public class TocHw3 {
 	public static void main(String[] args) {
 		//System.out.println("Hello!");
+		if (args.length < 4)
+		{
+			System.out.println("Execution Syntax is incorrect\n"
+					+ "Please input this way: "
+					+ "java -jar TocHw3.jar URL TownArea StreetName MingguoYear\n"
+					+ "Example:\njava –jar TocHW3.jar http://www.datagarage.io/api/5365dee31bc6e9d9463a0057  文山區  辛亥路  103");
+			return;
+		}
 		String MyURL = args[0];
 		String TownArea = args[1];
 		String Address = args[2];
